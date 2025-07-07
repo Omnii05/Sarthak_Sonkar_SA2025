@@ -34,3 +34,20 @@ Design a dynamic pricing model that adjusts parking prices based on:
 - Clean, well-documented notebook
 
 ---
+
+## 🧱 Architecture Diagram
+![Architecture Diagram](architecture.png)
+
+---
+
+## 🏗️ Project Workflow
+1. **Data Ingestion**: Load CSV file with parking lot activity
+2. **Preprocessing**: Combine timestamp, normalize occupancy, encode traffic & vehicle type
+3. **Modeling**:
+   - Model 1: Baseline pricing (simple ratio)
+   - Model 2: Contextual demand pricing (queue, traffic, event, vehicle)
+4. **Real-Time Simulation**: Feed batches of data through pricing models
+5. **Visualization**: Plot real-time prices and compare competitor prices with Bokeh
+6. **Output**: Export results to `dynamic_prices.csv`
+
+---
